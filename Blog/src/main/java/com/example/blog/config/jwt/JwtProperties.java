@@ -1,4 +1,4 @@
-package me.shinsunyoung.springbootdeveloper.config.jwt;
+package com.example.blog.config.jwt;
 
 import lombok.Getter;
 import lombok.Setter;
