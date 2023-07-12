@@ -3,7 +3,6 @@ package com.example.blog.config.jwt;
 import com.example.blog.domain.User;
 import com.example.blog.repository.UserRepository;
 import io.jsonwebtoken.Jwts;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +14,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Map;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 
