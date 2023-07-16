@@ -2,10 +2,12 @@ package com.example.blog.config;
 
 import com.example.blog.config.jwt.TokenProvider;
 import com.example.blog.config.oauth.OAuth2AuthorizationRequestBasedOnCookieRepository;
+import com.example.blog.config.oauth.OAuth2SuccessHandler;
 import com.example.blog.config.oauth.OAuth2UserCustomService;
 import com.example.blog.repository.RefreshTokenRepository;
 import com.example.blog.service.UserService;
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
@@ -94,9 +96,9 @@ public class WebOAuthSecurityConfig {
     public OAuth2AuthorizationRequestBasedOnCookieRepository oAuth2AuthorizationRequestBasedOnCookieRepository() {
         return new OAuth2AuthorizationRequestBasedOnCookieRepository();
     }
+
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncod
-er() {
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
 }
